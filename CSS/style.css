@@ -1,0 +1,385 @@
+
+html{
+    scroll-behavior: smooth;
+}
+
+:root{
+
+    --bg-color:#f1f1f1;
+    --color-pink:#DC143C;
+    --color-footer:#333;
+    --color-header: #000;
+    --font-headlines: 'Lora', serif;
+    --font-paragraph: 'Lato', sans-serif;
+    --font-logo:'Archivo', sans-serif;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    background-color: var(--bg-color);
+}
+
+.btn {
+    background-color: var(--color-pink);
+    color:var(--bg-color);
+    font-family: var(--font-paragraph);
+}
+
+.btn-top {
+    padding: 20px 25px;
+    font-weight:400 ;
+    margin-left: 25px;
+    margin-top:9.1rem;
+    display: block;
+    width: fit-content;
+
+}
+
+.wrapper{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.wrapper-top {
+    display: block;
+    
+}
+
+.logo {
+    background: var(--color-header);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 15px 0px;
+    position: fixed;
+    width: 100%;
+    top:0px;
+    z-index: 1;
+    
+
+}
+
+.logo h1 {
+    font-size: 2.2rem;
+    font-family:var(--font-logo);
+    font-weight: 900;
+    color: var(--bg-color);
+    margin-left: 25px;
+    font-style:normal;
+    
+}
+
+.logo h1 span {
+    color: var(--color-pink);
+}
+
+.showcase {
+    background: url(/image/showcase_image.png) no-repeat center;
+    background-size: cover;
+    display: block;
+    text-align: start;
+    padding: 250px 0px;
+    
+}
+
+.showcase h1 {
+    font-size: 2.5rem;
+    color: var(--bg-color);
+    font-family: var(--font-headlines);
+    position: absolute;
+    left: 25px;
+    top:12rem
+}
+
+.showcase  span{
+    display: block;
+}
+
+
+
+.nav-bar {
+    background-color: var(--color-pink);
+    width: 100%;
+    padding: 15px 0px;
+}
+.nav-bar ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-bar ul li {
+    list-style-type: none;
+}
+
+.nav-bar ul li a {
+    text-decoration: none;
+    font-family: var(--font-paragraph);
+    color: var(--bg-color);
+    background-color: none;
+}
+
+.main-wrapper{
+    display: block;
+
+}
+
+.feature-box {
+    margin-bottom: 70px;
+}
+
+.feature-box h2{
+    font-size: 2.2rem;
+    margin: 30px 0px 15px 25px;
+    font-family: var(--font-headlines);
+    padding-top: 50px;
+}
+
+.feature-box h3{
+    font-size: 1.5rem;
+    font-family: var(--font-headlines);
+    font-weight: 300;
+    margin-left: 25px;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.feature-block {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 25px;
+    margin-top: 30px;
+    font-size: 1.1rem;
+    
+}
+
+.feature-block img {
+    width: 5%;
+    margin-right: 10px;
+}
+
+.top-skill {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 80px;
+    padding: 100px 0px;
+    background-color: #f3f3f3;
+    border-top: solid 1px var(--color-pink);
+}
+
+.top-skill h2{
+    margin-left: 25px;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+.top-skill p {
+margin-left: 25px;
+font-family: var(--font-paragraph);
+font-size: 1.1rem;
+
+}
+
+.download { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-pink);
+    padding: 90px 0px;
+}
+
+.download-text {
+    margin-left: 25px;
+}
+.download-text h2{
+    color: var(--bg-color);
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.download-text p {
+    font-size: 1.2rem;
+    font-family: var(--font-paragraph);
+    color:var(--bg-color);
+}
+
+.download-text span {
+    display: block;
+    
+}
+
+.btn-download {
+    margin-right: 150px;
+    width: fit-content;
+    background-color: var(--bg-color);
+    padding: 25px 40px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: var(--color-pink);
+    font-weight: 400;
+    font-family: var(--font-paragraph);
+}
+
+.program-display h2 {
+    margin: 45px 0px 55px 35px;
+}
+
+.program-logo{
+    height: 420px;
+}
+.program-logo img {
+    width: 100%;
+    height: 400px;
+    
+   
+}
+
+.instructor {
+    display: block;
+    background-color: var(--color-pink);
+    height: 700px;
+    
+    
+}
+
+.instructor-h2 {
+    font-size: 2rem;
+    margin: 40px 0px 10px 40px;
+    font-family: var(--font-headlines);
+    padding-top: 60px;
+    color: var(--bg-color);
+}
+
+.instructor-p{
+ font-size: 1.1rem;
+ font-family: var(--font-paragraph);
+ margin-bottom: 40px;
+ margin-left: 40px;
+ color: var(--bg-color);
+}
+
+.card-holder{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-column-gap: 10px;
+    margin: 20px 20px;
+}
+.card {
+    width: 240px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--bg-color);
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+
+
+.card p {
+    text-align: center;
+}
+
+
+
+.card img{
+    width: 70%;
+    margin-top: 20px;
+}
+
+.name-prof {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.name-prof h3{
+    font-size: 1.2rem;
+    margin: 25px 0px 0px 0px;
+}
+
+.name-prof p{
+    font-size: 1rem;
+    margin-bottom: 25px;
+}
+
+.quotes{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    font-family: var(--font-paragraph);
+}
+
+.page-bottom {
+    background-color: var(--color-footer);
+}
+
+.footer-top form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.footer-top form label{
+    color: var(--bg-color);
+    font-size: 1.5rem;
+    font-family: var(--color-header);
+    margin-bottom: 20px;
+}
+
+input[type = button]{
+    padding:10px 30px;
+    color: var(--color-header);
+    font-weight:bold ;
+    border-radius: 4px;
+    margin-top: 7px;
+}
+#message{
+    border-radius: 4px;
+}
+.page-bottom hr {
+    border: 1px 0px 0px 0px;
+    margin: 30px 10px;
+    
+}
+
+.footer-bottom{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 30px 0px;
+
+}
+
+.footer-bottom article {
+    text-align: center;
+}
+
+.footer-bottom article h3 {
+    font-size: 1.4rem;
+    font-family: var(--font-headlines);
+    color: var(--color-pink);
+    opacity: .8;
+}
+
+.page-bottom article a{
+    display: block;
+    color: var(--bg-color);
+    text-decoration: none;
+    opacity: .7;
+    margin-top: 20px;
+    font-family: var(--font-paragraph);
+}
